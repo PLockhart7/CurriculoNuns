@@ -1,0 +1,38 @@
+
+%descripcion-li{
+    list-style-type: none;
+    position: relative;
+    left: 115px;
+}
+
+%dibujito{
+    position: relative;
+    left: 80px;
+}
+%dibujito-li{
+    list-style-type: none;
+    position: relative;
+    width:7px;
+    top: 0;
+    left:20px;
+    background: blue;
+}
+%dibujito-li-after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left:-4px;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+
+%idioma{
+    height: 10px;
+    background-color: green;
+    margin: 4%;
+}

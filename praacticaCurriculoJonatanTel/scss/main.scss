@@ -1,0 +1,94 @@
+@import 'functions';
+
+body, *::after{
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+main{
+    width: 80%;
+    margin: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px solid black;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.left-container{
+    width: 25%;
+    border: 3px solid black;
+    margin: 2%;
+    flex-wrap: wrap;
+    background-color: rgb(61, 59, 59);  
+}
+.right-container{
+    width: 75%;
+    margin: 2%;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+h2, p, hr{
+    margin: 4%;
+    color: white;
+}
+.h2-right{
+    color: black;
+    height: min-content;
+    width: 100%;
+}
+
+h1{
+    padding-left: 25%;
+    width: max-content;
+    height: min-content;
+}
+.valenciano{
+    @extend %idioma;
+    width: 90%;
+}
+.ingles{
+    @extend %idioma;
+    width: 50%;
+}
+
+.dibujito{
+    @extend %dibujito;
+    top: -80px;
+}
+.dibujito li{
+    @extend %dibujito-li;
+}
+.dibujito li::after {
+    @extend %dibujito-li-after;
+  }
+.descripcion li {
+    @extend %descripcion-li;
+    bottom: 165px;
+}
+.dibujito-2{
+    @extend %dibujito;
+    top: -60px; 
+}
+.dibujito-2 li{
+    @extend %dibujito-li;
+}
+.dibujito-2 li::after {
+    @extend %dibujito-li-after;
+}
+.descripcion-2 li {
+    @extend %descripcion-li;
+    bottom: 120px;
+}
+i{
+    margin: 5%;
+}
+.anyos li{
+    list-style-type: none;
+    width: 30%;
+}
+
+
